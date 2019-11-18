@@ -43,6 +43,7 @@ namespace FuncionalChallenge.Infra.DataContexts
             context.Produtos.Add(new Produto { Id = 2, CategoriaId = 2, ProdutoAtivo = true, Nome = "Dorflex", Preco = 15, Industria = "Bifarma", QtdEstoque = 200});
             context.Produtos.Add(new Produto { Id = 3, CategoriaId = 2, ProdutoAtivo = true, Nome = "Dipirona", Preco = 15, Industria = "Ultrafarma", QtdEstoque = 500});
             context.Produtos.Add(new Produto { Id = 4, CategoriaId = 3, ProdutoAtivo = true, Nome = "Gelol", Preco = 20, Industria = "Drogaria São Paulo", QtdEstoque = 300});
+            context.SaveChanges();
 
             base.Seed(context);
         }
